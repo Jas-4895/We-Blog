@@ -1,0 +1,55 @@
+ul {
+ list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  top: 0;
+  width: 100%;
+ position: fixed; 
+}
+
+.head {
+color: navy;
+}
+.float {
+float: right;
+}
+.anony {
+ border-radius: 100%;
+ }
+.Jas {
+ border-radius: 100%;
+ }
+.link {
+color:green;
+}
+.date {
+color: gray;
+}
+
+.title {
+color:teal;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #c0c0c0;
+}
+
+.active {
+  background-color: teal;
+}
