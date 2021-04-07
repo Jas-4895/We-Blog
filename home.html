@@ -1,6 +1,18 @@
 <!doctype html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+</script>
+<style>
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
 <head>
 <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
   <title>
@@ -10,7 +22,7 @@
 "http://weblog.gq/WeBlog/logo.png"
 		type = "image/x-icon">
  </head>
- <body style="font-family:verdana;">
+ <body style="font-family:verdana;" class="dark-mode">
 
 <ul>
 <li>
@@ -55,6 +67,8 @@
       <br>
   Have something you wanted to post online? <a href="mailto:weblog5895@gmail.com" class="link">Send Us!</a>(You can send images too!)
   </h4>
+  <hr>
+  <button onclick="myFunction()">Toggle Dark/Bright Mode</button>
   <hr>
   <p>
    <img src="J.webp" width="50" length="50" class="Jas" >
@@ -155,25 +169,24 @@ Just a few days later, I started to work on a real blog.</p>
    <center>
    |
 <a href="home.html">
-<img src="Home.png" style="width:42px;height:42px;">
+<img src="house.webp" style="width:42px;height:42px;">
 </a>
-   |
-  <a href="mailto:weblog5895@gmail.com" class="link">
-  <img src="New.png" style="width:42px;height:42px;">
-  </a>
-   |
-	<a href="about.html">
-	<img src="about.png" style="width:42px;height:42px;">
-	</a>
+|
+  <a href="imagepost.html">
+<img src="Polaroid_icon.jpg" style="width:60px;height:42px;">
+</a>
 	|
+ <a href="mailto:weblog5895@gmail.com" class="link">
+ <img src="upload.jpg" style="width:42px;height:42px;">
+ </a>
+  |
 	<a href="contact.html">
 	<img src="contact.jpg" style="width:42px;height:42px;">
 	</a>
 	|
-		<a href="imagepost.html">
-	<img src="Polaroid_icon.jpg" style="width:60px;height:42px;">
-	</a>
-	|
+  	<a href="about.html">
+  	<img src="info.png" style="width:42px;height:42px;">
+  	</a>
 	</center>
 	<font class="date" style="font-size:10;">
 	This Website Belongs To We Blog Team - 2021.
