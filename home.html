@@ -72,6 +72,75 @@ function myFunction() {
   </h4>
   <hr>
   <button onclick="myFunction()">Toggle Dark/Bright Mode</button>
+  <br>
+  <br>
+  <h2> Quote Generator </h2>
+  <div id="quoteDisplay">
+  <button onclick="newQuote()"> Press The Button Below To See THe Quote </button>
+  <script>
+  var quotes = [
+    'The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela',
+    'The way to get started is to quit talking and begin doing. -Walt Disney',
+    'If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt',
+  'Spread love everywhere you go. Let no one ever come to you without leaving happier. -Mother Teresa',
+  'When you reach the end of your rope, tie a knot in it and hang on. -Franklin D. Roosevelt',
+  'Always remember that you are absolutely unique just like everyone else. -Margaret Mead',
+  'Tell me and I forget teach me and I remember involve me and I learn. -Benjamin Franklin',
+  'It is during our darkest moments that we must focus to see the light. -Aristotle'
+  ]
+
+  function newQuote() {
+    var randomNumber = Math.floor(Math.random() * (quotes.length));
+    document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+  }
+
+  </script>
+
+  </div>
+  <div id="quoteDisplay">
+  <button onclick="newQuote()"> New Quote </button>
+  <script>
+  var quotes = [
+    'The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela',
+    'The way to get started is to quit talking and begin doing. -Walt Disney',
+    'If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt',
+  'Spread love everywhere you go. Let no one ever come to you without leaving happier. -Mother Teresa',
+  'When you reach the end of your rope, tie a knot in it and hang on. -Franklin D. Roosevelt',
+  'Always remember that you are absolutely unique just like everyone else. -Margaret Mead',
+  'Tell me and I forget teach me and I remember involve me and I learn. -Benjamin Franklin',
+  'It is during our darkest moments that we must focus to see the light. -Aristotle'
+  ]
+
+  function newQuote() {
+    var randomNumber = Math.floor(Math.random() * (quotes.length));
+    document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+  }
+
+  </script>
+
+  </div>
+  <br>
+  <br>
+  <p>
+       Translate this page in
+       your preferred language:
+   </p>
+
+   <div id="google_translate_element"></div>
+
+   <script type="text/javascript">
+       function googleTranslateElementInit() {
+           new google.translate.TranslateElement(
+               {pageLanguage: 'en'},
+               'google_translate_element'
+           );
+       }
+   </script>
+
+   <script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+       cb=googleTranslateElementInit">
+   </script>
   <hr>
   <p>
    <img src="J.webp" width="50" length="50" class="Jas" >
@@ -82,7 +151,7 @@ function myFunction() {
    </p>
    <br>
    <h3>
-     <a href="shm.html" class="link">
+     <a href="shm.html" class="link" target="_blank">
    The Electronic Music Supergroup, Swedish House Mafia, signs with The Weeknd's Manager.
   </a>
    </h3>
@@ -128,7 +197,7 @@ To prevent the spread of COVID-19, follow these steps:
 > If you have a fever, cough and difficulty breathing, seek medical attention.
 <br>
 <br>
-Masks
+Importance of Masks:
 <br>
 <br>
 Masks can help prevent the spread of the virus from the person wearing the mask to others.
